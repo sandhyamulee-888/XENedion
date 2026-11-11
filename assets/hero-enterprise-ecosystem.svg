@@ -1,0 +1,158 @@
+<svg width="1440" height="980" viewBox="0 0 1440 980" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Light Enterprise Canvas Gradient -->
+    <linearGradient id="ecoCanvasGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="30%" stop-color="#FCFDFF"/>
+      <stop offset="65%" stop-color="#F3F7FC"/>
+      <stop offset="100%" stop-color="#E8F0F8"/>
+    </linearGradient>
+
+    <!-- Deep Navy Ambient Glow from Core -->
+    <radialGradient id="ecoNavyGlow" cx="68%" cy="42%" r="55%">
+      <stop offset="0%" stop-color="#0A1931" stop-opacity="0.08"/>
+      <stop offset="45%" stop-color="#133E87" stop-opacity="0.035"/>
+      <stop offset="85%" stop-color="#0A1931" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Warm Orange Brand Ambient Glow -->
+    <radialGradient id="ecoOrangeGlow" cx="28%" cy="28%" r="48%">
+      <stop offset="0%" stop-color="#FF7A00" stop-opacity="0.085"/>
+      <stop offset="50%" stop-color="#FFA043" stop-opacity="0.03"/>
+      <stop offset="85%" stop-color="#FF7A00" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Center Stage Light Beam -->
+    <radialGradient id="stageBeam" cx="60%" cy="50%" r="45%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.88"/>
+      <stop offset="65%" stop-color="#F8FAFC" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#F1F5F9" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Architectural Perspective Grid Pattern -->
+    <pattern id="archGrid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#E2E8F0" stroke-width="0.75" stroke-opacity="0.6"/>
+      <circle cx="48" cy="48" r="1.2" fill="#CBD5E1" fill-opacity="0.6"/>
+    </pattern>
+
+    <!-- Fiber Bus Highway Gradient -->
+    <linearGradient id="fiberHighway" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#CBD5E1" stop-opacity="0.3"/>
+      <stop offset="25%" stop-color="#FF7A00" stop-opacity="0.75"/>
+      <stop offset="65%" stop-color="#133E87" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#CBD5E1" stop-opacity="0.3"/>
+    </linearGradient>
+
+    <!-- Card/Node Surface Linear Gradient -->
+    <linearGradient id="isoCardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#F8FAFC" stop-opacity="0.85"/>
+    </linearGradient>
+
+    <!-- Bottom Blend to Next Section -->
+    <linearGradient id="bottomBlendGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 1. Background Surface -->
+  <rect width="1440" height="980" fill="url(#ecoCanvasGrad)"/>
+  <rect width="1440" height="980" fill="url(#ecoNavyGlow)"/>
+  <rect width="1440" height="980" fill="url(#ecoOrangeGlow)"/>
+  <rect width="1440" height="980" fill="url(#stageBeam)"/>
+
+  <!-- 2. Engineering Precision Grid -->
+  <rect width="1440" height="980" fill="url(#archGrid)"/>
+
+  <!-- 3. Architectural Isometric Ground Planes & Perspective Floor Lines -->
+  <g opacity="0.55">
+    <line x1="0" y1="890" x2="1440" y2="890" stroke="#CBD5E1" stroke-width="1.2"/>
+    <line x1="0" y1="935" x2="1440" y2="935" stroke="#E2E8F0" stroke-width="1"/>
+    <line x1="120" y1="980" x2="520" y2="760" stroke="#E2E8F0" stroke-width="1" stroke-dasharray="4 4"/>
+    <line x1="720" y1="980" x2="720" y2="760" stroke="#E2E8F0" stroke-width="1" stroke-dasharray="4 4"/>
+    <line x1="1320" y1="980" x2="920" y2="760" stroke="#E2E8F0" stroke-width="1" stroke-dasharray="4 4"/>
+
+    <!-- Subtle Isometric Floor Platform beneath visual stage -->
+    <polygon points="560,780 1180,680 1360,820 740,920" fill="#F1F5F9" fill-opacity="0.45" stroke="#E2E8F0" stroke-width="1"/>
+  </g>
+
+  <!-- 4. Multi-Branch Connected Network Highways -->
+  <g opacity="0.75">
+    <!-- Main Orbital Data Trunk -->
+    <path d="M 80 340 C 340 180, 820 160, 1280 260 C 1420 300, 1140 480, 720 440" fill="none" stroke="url(#fiberHighway)" stroke-width="2" stroke-dasharray="6 6"/>
+    <path d="M 140 660 C 440 520, 860 680, 1240 540" fill="none" stroke="url(#fiberHighway)" stroke-width="1.5" stroke-dasharray="4 6"/>
+
+    <!-- Cross-Branch Interconnects to Central Platform -->
+    <path d="M 940 220 L 720 580" fill="none" stroke="#FF7A00" stroke-width="1.2" stroke-opacity="0.4" stroke-dasharray="3 4"/>
+    <path d="M 480 260 L 940 220" fill="none" stroke="#133E87" stroke-width="1.2" stroke-opacity="0.35" stroke-dasharray="3 4"/>
+    <path d="M 1180 500 L 940 220" fill="none" stroke="#FF7A00" stroke-width="1.2" stroke-opacity="0.35" stroke-dasharray="4 4"/>
+    <path d="M 320 440 L 480 260" fill="none" stroke="#0A1931" stroke-width="1" stroke-opacity="0.25" stroke-dasharray="3 4"/>
+  </g>
+
+  <!-- 5. Stylized Branch Ecosystem Nodes (Retail Stores, Warehouse, Central Cloud Hub) -->
+  <g opacity="0.85">
+    <!-- NODE 1: Central Cloud ERP Platform Core (Top Center) -->
+    <g transform="translate(940, 220)">
+      <!-- Server Rings -->
+      <circle r="32" stroke="#FF7A00" stroke-width="1" stroke-opacity="0.15" stroke-dasharray="4 4"/>
+      <circle r="20" stroke="#133E87" stroke-width="1.2" stroke-opacity="0.3"/>
+      <circle r="8" fill="#FF7A00"/>
+      <circle r="3" fill="#FFFFFF"/>
+      <!-- Label Plaque -->
+      <rect x="-65" y="-38" width="130" height="20" rx="10" fill="url(#isoCardGrad)" stroke="#FF7A00" stroke-width="0.8" stroke-opacity="0.5"/>
+      <text x="0" y="-25" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#0A1931" text-anchor="middle" letter-spacing="0.04em">
+        CENTRAL CLOUD ERP
+      </text>
+    </g>
+
+    <!-- NODE 2: Retail Branch #01 - Connaught Place (Left Upper) -->
+    <g transform="translate(480, 260)">
+      <circle r="16" stroke="#0A1931" stroke-width="1" stroke-opacity="0.2"/>
+      <circle r="5" fill="#0A1931"/>
+      <rect x="-60" y="-34" width="120" height="18" rx="9" fill="url(#isoCardGrad)" stroke="#CBD5E1" stroke-width="0.8"/>
+      <!-- Retail store canopy mini-icon -->
+      <path d="M -48 -25 L -44 -29 L -40 -25" stroke="#FF7A00" stroke-width="1" fill="none"/>
+      <text x="5" y="-22" font-family="Inter, sans-serif" font-size="8.5" font-weight="600" fill="#334155" text-anchor="middle">
+        Store #01 • Connaught Pl.
+      </text>
+    </g>
+
+    <!-- NODE 3: Retail Branch #02 - Indiranagar (Right Center) -->
+    <g transform="translate(1180, 500)">
+      <circle r="16" stroke="#FF7A00" stroke-width="1" stroke-opacity="0.25"/>
+      <circle r="5" fill="#FF7A00"/>
+      <rect x="-55" y="-34" width="110" height="18" rx="9" fill="url(#isoCardGrad)" stroke="#CBD5E1" stroke-width="0.8"/>
+      <path d="M -44 -25 L -40 -29 L -36 -25" stroke="#FF7A00" stroke-width="1" fill="none"/>
+      <text x="5" y="-22" font-family="Inter, sans-serif" font-size="8.5" font-weight="600" fill="#334155" text-anchor="middle">
+        Store #02 • Indiranagar
+      </text>
+    </g>
+
+    <!-- NODE 4: Retail Branch #03 - Bandra West (Left Mid) -->
+    <g transform="translate(320, 440)">
+      <circle r="14" stroke="#0A1931" stroke-width="1" stroke-opacity="0.2"/>
+      <circle r="4.5" fill="#0A1931"/>
+      <rect x="-52" y="-32" width="104" height="18" rx="9" fill="url(#isoCardGrad)" stroke="#CBD5E1" stroke-width="0.8"/>
+      <path d="M -42 -23 L -38 -27 L -34 -23" stroke="#FF7A00" stroke-width="1" fill="none"/>
+      <text x="5" y="-20" font-family="Inter, sans-serif" font-size="8.5" font-weight="600" fill="#334155" text-anchor="middle">
+        Store #03 • Bandra W.
+      </text>
+    </g>
+
+    <!-- NODE 5: Central Warehouse & Distribution Depot (Bottom Center) -->
+    <g transform="translate(720, 580)">
+      <circle r="22" stroke="#133E87" stroke-width="1.2" stroke-opacity="0.3"/>
+      <circle r="6" fill="#133E87"/>
+      <!-- Warehouse Rack / Box Mini-Icon -->
+      <rect x="-70" y="-36" width="140" height="20" rx="10" fill="url(#isoCardGrad)" stroke="#133E87" stroke-width="0.8" stroke-opacity="0.5"/>
+      <rect x="-58" y="-28" width="8" height="6" fill="#133E87" rx="1"/>
+      <text x="6" y="-23" font-family="Inter, sans-serif" font-size="8.5" font-weight="700" fill="#133E87" text-anchor="middle">
+        Central Logistics Depot
+      </text>
+    </g>
+  </g>
+
+  <!-- 6. Bottom Blend to Next Section -->
+  <rect y="840" width="1440" height="140" fill="url(#bottomBlendGrad)"/>
+</svg>

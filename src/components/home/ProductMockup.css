@@ -1,0 +1,91 @@
+/* Hero Ecosystem Spacer - Allows full-width background to shine through */
+.hero-ecosystem-spacer {
+  position: relative;
+  width: 100%;
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.ecosystem-telemetry-row {
+  display: flex;
+  justify-content: flex-end;
+  pointer-events: auto;
+  position: relative;
+  z-index: 5;
+}
+
+.overlay-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 14px -2px rgba(16, 43, 80, 0.08);
+  border: 1px solid var(--border-light);
+  transition: all 0.2s ease;
+}
+
+.overlay-status-pill.online {
+  color: #065F46;
+  border-color: rgba(16, 185, 129, 0.35);
+}
+
+.overlay-status-pill.online:hover {
+  background: #FFFFFF;
+  border-color: #10B981;
+  transform: translateY(-1px);
+}
+
+.overlay-status-pill.syncing {
+  color: #92400E;
+  border-color: rgba(245, 158, 11, 0.4);
+}
+
+.overlay-status-pill.offline {
+  color: #991B1B;
+  border-color: rgba(239, 68, 68, 0.4);
+}
+
+.live-pulse-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #10B981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.25);
+}
+
+.spin-icon {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.hero-ecosystem-stage {
+  flex: 1;
+  min-height: 440px;
+  pointer-events: none;
+}
+
+@media (max-width: 960px) {
+  .hero-ecosystem-spacer {
+    min-height: 280px;
+  }
+  .hero-ecosystem-stage {
+    min-height: 220px;
+  }
+  .ecosystem-telemetry-row {
+    justify-content: center;
+  }
+}

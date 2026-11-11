@@ -1,0 +1,72 @@
+<svg width="1440" height="900" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="45%" stop-color="#FBFDFF"/>
+      <stop offset="80%" stop-color="#F2F6FC"/>
+      <stop offset="100%" stop-color="#EBF1FA"/>
+    </linearGradient>
+
+    <!-- Vibrant Orange Orbital Glow from Logo -->
+    <radialGradient id="orangeGlow" cx="25%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#FF7A00" stop-opacity="0.14"/>
+      <stop offset="45%" stop-color="#FFA043" stop-opacity="0.06"/>
+      <stop offset="85%" stop-color="#FF7A00" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Deep Corporate Navy Ambient Glow from Logo -->
+    <radialGradient id="navyGlow" cx="80%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#0B2545" stop-opacity="0.08"/>
+      <stop offset="50%" stop-color="#133E87" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#0B2545" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Technical Light Grid -->
+    <pattern id="lightGrid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#E2E8F0" stroke-width="0.75" stroke-opacity="0.6"/>
+      <circle cx="48" cy="48" r="1.5" fill="#CBD5E1" fill-opacity="0.7"/>
+    </pattern>
+
+    <!-- Connected Orbital Line Gradient (Orange to Navy) -->
+    <linearGradient id="orbitGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF7A00" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#0B2545" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FF9500" stop-opacity="0.6"/>
+    </linearGradient>
+
+    <linearGradient id="bottomFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base Canvas -->
+  <rect width="1440" height="900" fill="url(#bgGrad)"/>
+
+  <!-- Ambient Glows -->
+  <rect width="1440" height="900" fill="url(#orangeGlow)"/>
+  <rect width="1440" height="900" fill="url(#navyGlow)"/>
+
+  <!-- High-Precision Technical Grid -->
+  <rect width="1440" height="900" fill="url(#lightGrid)"/>
+
+  <!-- Orbital swooshes representing multi-branch synchronization (inspired by logo's orange orbit) -->
+  <g opacity="0.7">
+    <!-- Elliptical Orbit Path matching logo -->
+    <path d="M 100 360 C 320 180, 800 160, 1260 280 C 1400 320, 1100 480, 680 440" fill="none" stroke="url(#orbitGrad)" stroke-width="2" stroke-dasharray="6 6"/>
+    <path d="M 180 580 C 440 460, 880 500, 1320 420" fill="none" stroke="#FF7A00" stroke-width="1.5" stroke-opacity="0.35" stroke-dasharray="4 6"/>
+    
+    <!-- Connection Hub Nodes -->
+    <circle cx="680" cy="240" r="5" fill="#FF7A00"/>
+    <circle cx="680" cy="240" r="14" stroke="#FF7A00" stroke-width="1.2" stroke-opacity="0.35"/>
+
+    <circle cx="340" cy="210" r="4" fill="#0B2545"/>
+    <circle cx="1140" cy="260" r="4" fill="#FF7A00"/>
+    <circle cx="920" cy="480" r="4.5" fill="#0B2545"/>
+    <circle cx="480" cy="510" r="3.5" fill="#FF7A00"/>
+  </g>
+
+  <!-- Bottom Transition to Clean White -->
+  <rect y="740" width="1440" height="160" fill="url(#bottomFade)"/>
+</svg>

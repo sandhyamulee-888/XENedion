@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60">
+  <defs>
+    <linearGradient id="xenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#101B35"/>
+      <stop offset="100%" stop-color="#182744"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F28C28"/>
+      <stop offset="100%" stop-color="#E07010"/>
+    </linearGradient>
+  </defs>
+  <!-- Mark -->
+  <g transform="translate(10, 8)">
+    <!-- Hex / Node geometry symbolizing multi-branch & cloud sync -->
+    <rect x="0" y="4" width="36" height="36" rx="9" fill="url(#xenGrad)"/>
+    <!-- Connected nodes / path -->
+    <path d="M10 14 L26 30 M26 14 L10 30" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="10" cy="14" r="3.2" fill="url(#accentGrad)"/>
+    <circle cx="26" cy="14" r="3.2" fill="#FFFFFF"/>
+    <circle cx="10" cy="30" r="3.2" fill="#FFFFFF"/>
+    <circle cx="26" cy="30" r="3.2" fill="url(#accentGrad)"/>
+    <circle cx="18" cy="22" r="3" fill="#FFFFFF"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="56" y="38" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-weight="800" font-size="24" letter-spacing="-0.5" fill="#101B35">XEN<tspan fill="#F28C28">edion</tspan></text>
+  <rect x="175" y="21" width="36" height="18" rx="4" fill="#F5F7FA" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="181" y="34" font-family="'JetBrains Mono', monospace" font-weight="700" font-size="10" letter-spacing="0.8" fill="#182744">ERP</text>
+</svg>
+
