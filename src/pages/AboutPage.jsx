@@ -123,10 +123,10 @@ export default function AboutPage() {
                 Office Presence
               </h3>
               <p style={{ fontSize: '13px', color: 'var(--steel-600)', lineHeight: '1.6' }}>
-                Operating from tech hubs in Hyderabad and Bangalore, India. Supporting retail and distribution clients nationwide.
+                Operating from Bangalore, India. Supporting retail and distribution clients nationwide.
               </p>
               <div style={{ marginTop: '20px', paddingTop: '12px', borderTop: '1px solid var(--border-light)', fontSize: '11px', fontFamily: 'var(--font-mono)', color: 'var(--steel-500)' }}>
-                HQ: Hyderabad &bull; Bangalore
+                HQ: Bangalore, India
               </div>
             </div>
           </div>

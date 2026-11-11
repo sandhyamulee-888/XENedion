@@ -61,7 +61,7 @@ export default function Footer() {
               </li>
               <li style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', fontSize: '13px' }}>
                 <MapPin size={15} color="var(--gold-600)" style={{ flexShrink: 0, marginTop: '3px' }} />
-                <span>Hyderabad &amp; Bangalore, India</span>
+                <span>Bangalore, India</span>
               </li>
               <li style={{ marginTop: '12px' }}>
                 <Link to="/contact/request-a-demo" className="btn btn-primary" style={{ padding: '8px 16px', fontSize: '13px', width: '100%', justifyContent: 'center' }}>
