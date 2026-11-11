@@ -48,7 +48,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <div style={{ fontSize: '11px', textTransform: 'uppercase', color: 'var(--steel-500)', fontWeight: 700 }}>Offices</div>
-                    <div style={{ fontSize: '15px', fontWeight: 700, color: 'var(--steel-900)' }}>Hyderabad &bull; Bangalore, India</div>
+                    <div style={{ fontSize: '15px', fontWeight: 700, color: 'var(--steel-900)' }}>Bangalore, India</div>
                   </div>
                 </div>
 
